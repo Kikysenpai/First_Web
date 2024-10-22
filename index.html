@@ -11,10 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,400&display=swap"
       rel="stylesheet"
     />
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div></div>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Batik <span>You</span>Made.</a>
+
+      <div class="navbar-nav">
+        <a href="#"> Home </a>
+        <a href="#about"> Tentang Kami </a>
+        <a href="#menu"> Etalase </a>
+        <a href="#contact"> Kontak </a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="etalase"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Title Product -->
+    <div>
+      <p><h1>Batik YouMade</h1></p>
+      <p>Batik Khas Indonesia dengan corak yang cocok untuk Anak Muda juga orang Dewasa</p>
+      <p></p>
+
+    </div>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

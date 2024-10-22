@@ -1,0 +1,76 @@
+:root {
+  --primary: #c7a069;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #c9aca3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-family: "Kanit", serif;
+  font-weight: 850;
+  font-size: 2.2rem;
+  font-style: italic;
+  color: #fff;
+}
+.navbar .navbar-logo span {
+  font-family: "Kanit", serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  font-family: "Kanit", serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+  font-style: normal;
+  color: azure;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+  font-size: 1.6rem;
+}
+
+.navbar .navbar-extra a {
+  display: inline-block;
+  margin: 0 0.6rem;
+}
+
+.introduce p {
+  padding-block-start: 0%;
+  color: #fff;
+  margin: 0 4rem;
+}
