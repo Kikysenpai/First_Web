@@ -10,13 +10,11 @@
   outline: none;
   border: none;
   text-decoration: none;
-  color: #fff;
 }
 
 body {
   font-family: "Kanit", sans-serif;
   background-color: var(--bg);
-  color: #fff;
 }
 
 /* navbar */
@@ -61,16 +59,31 @@ body {
 
 .navbar .navbar-nav a:hover {
   color: var(--primary);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.navbar .navbar-nav a::after {
+  content: " ";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
 }
 
 .navbar .navbar-extra a {
-  display: inline-block;
-  margin: 0 0.6rem;
+  color: white;
+  margin: 0 0.5rem;
 }
 
-.introduce p {
-  padding-block-start: 0%;
-  color: #fff;
-  margin: 0 4rem;
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#etalase {
+  display: none;
 }
